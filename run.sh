@@ -13,7 +13,7 @@ BROWSERS=(chrome firefox)
 # We run many tests to verify the functionality of sitespeed.io and you can simplify this by
 # removing things you don't need!
 
-for url in tests/$TEST/desktop/urls/*.txt ; do
+for url in tests/$TEST/desktop/urls/*.txt ; do 
     [ -e "$url" ] || continue
     for browser in "${BROWSERS[@]}" ; do
         POTENTIAL_CONFIG="./config/$(basename ${url%%.*}).json"
