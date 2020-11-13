@@ -6,7 +6,7 @@
 
 DOCKER_CONTAINER=sitespeedio/sitespeed.io:13.1.1
 DOCKER_SETUP="--cap-add=NET_ADMIN  --shm-size=2g --rm -v /config:/config -v "$(pwd)":/sitespeed.io -v /etc/localtime:/etc/localtime:ro -e MAX_OLD_SPACE_SIZE=3072 "
-CONFIG="--config /sitespeed.io/config"
+CONFIG="--config /sitespeed.io/config/config.json"
 BROWSERS=(chrome firefox)
 
 # We loop through all directories we have
