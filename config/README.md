@@ -26,7 +26,7 @@ Here are the configuration files that we use. You can see that they all extends 
 **/conf/webpagetest-secrets.json**
 ```json
 {
-  "extends": "/config/secrets.json",
+  "extends": "./config/secrets.json",
   "influxdb": {
     "host": "OUR_HOST",
     "database": "DATABASE",

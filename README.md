@@ -131,7 +131,7 @@ On our server we have two configuration files that only exits on that server, th
 **/conf/webpagetest-secrets.json**
 ```json
 {
-  "extends": "/config/secrets.json",
+  "extends": "./config/secrets.json",
   "influxdb": {
     "host": "OUR_HOST",
     "database": "DATABASE",

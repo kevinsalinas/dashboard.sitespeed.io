@@ -1,5 +1,5 @@
 {
-  "extends": "secrets.json",
+  "extends": "./config/secrets.json",
   "browsertime": {
     "connectivity": {
       "engine": "throttle",
