@@ -1,5 +1,22 @@
 # Tests running dashboard.sitespeed.io
 
+### Graphite container 
+
+sudo docker run -d --name graphite -p 8080:80 -p 2003:2003 -v /home/salinas_kevinaxel/sitespeed/data:/opt/graphite/storage/whisper sitespeedio/graphite
+
+### Grafana setup
+
+sudo service grafana-server start
+sudo service grafana-server status
+
+sudo nano /etc/grafana/grafana.ini
+
+cambiar admin passwrod en grafana
+
+sudo grafana-cli admin reset-admin-password admin
+
+
+
 [![Build status][travis-image]][travis-url]
 
 This is a working example of how you can use sitespeed.io to monitor the performance of your web site. The code run on an instance on Digital Ocean and send the metrics to [dashboard.sitespeed.io](https://dashboard.sitespeed.io) (that is setup using our [docker-compose file](https://github.com/sitespeedio/sitespeed.io/blob/master/docker/docker-compose.yml) and configured for production usage).
