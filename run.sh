@@ -25,16 +25,16 @@ for url in tests/$TEST/desktop/urls/*.txt ; do
 done
 
 # Desktop scripted tests
-# for script in tests/$TEST/desktop/scripts/*.js ; do
-#     [ -e "$script" ] || continue
-#     for browser in "${BROWSERS[@]}"  ; do
-#         POTENTIAL_CONFIG="./config/$(basename ${script%%.*}).json"
-#         [[ -f "$POTENTIAL_CONFIG" ]] && CONFIG_FILE="$(basename ${script%.*}).json" || CONFIG_FILE="desktop.json"
-#         NAMESPACE="--graphite.namespace sitespeed_io.$(basename ${script%%.*})"
-#         docker run $DOCKER_SETUP $DOCKER_CONTAINER $NAMESPACE $CONFIG/$CONFIG_FILE --multi -b $browser --spa $script
-#         control
-#     done
-# done
+for script in tests/$TEST/desktop/scripts/*.js ; do
+    [ -e "$script" ] || continue
+    for browser in "${BROWSERS[@]}"  ; do
+        POTENTIAL_CONFIG="./config/$(basename ${script%%.*}).json"
+        [[ -f "$POTENTIAL_CONFIG" ]] && CONFIG_FILE="$(basename ${script%.*}).json" || CONFIG_FILE="desktop.json"
+        NAMESPACE="--graphite.namespace sitespeed_io.$(basename ${script%%.*})"
+        docker run $DOCKER_SETUP $DOCKER_CONTAINER $NAMESPACE $CONFIG/$CONFIG_FILE --multi -b $browser --spa $script
+        control
+    done
+done
 
 for url in tests/$TEST/emulatedMobile/urls/*.txt ; do
     [ -e "$url" ] || continue
