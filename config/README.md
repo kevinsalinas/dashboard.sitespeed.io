@@ -23,6 +23,7 @@ Here are the configuration files that we use. You can see that they all extends 
 }
 ```
 
+<<<<<<< HEAD
 **/conf/webpagetest-secrets.json**
 ```json
 {
@@ -40,6 +41,8 @@ Here are the configuration files that we use. You can see that they all extends 
 }
 ```
 
+=======
+>>>>>>> main
 You can follow the same pattern or have another setup if your repo is private.
 
 [Read the documentation on how to configure sitespeed.io](https://www.sitespeed.io/documentation/sitespeed.io/configuration/).

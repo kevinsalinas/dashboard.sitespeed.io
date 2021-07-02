@@ -17,12 +17,8 @@
     "firefox": {
       "includeResponseBodies": "all",
       "disableBrowsertimeExtension": true,
-      "windowRecorder": true,
       "geckoProfiler": true
-    },
-    "pageLoadStrategy": "none",
-    "pageCompleteCheckStartWait": 5000,
-    "pageCompleteCheckPollTimeout": 1000
+    }
   },
   "cpu": true,
   "gzipHAR": true,
@@ -33,5 +29,11 @@
   },
   "screenshot": {
     "type": "jpg"
+  },
+  "slug": "firstView",
+  "copyLatestFilesToBase": true,
+  "graphite": {
+    "namespace": "sitespeed_io.desktop",
+    "addSlugToKey": true
   }
 }

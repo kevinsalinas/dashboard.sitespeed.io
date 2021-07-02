@@ -18,6 +18,7 @@
       "enableTraceScreenshots": true
     }
   },
+  "utc": true,
   "cpu": true,
   "gzipHAR": true,
   "html": {
@@ -28,5 +29,11 @@
   "mobile": true,
   "screenshot": {
     "type": "jpg"
+  },
+  "slug": "firstView",
+  "copyLatestFilesToBase": true,
+  "graphite": {
+    "namespace": "sitespeed_io.emulatedMobile",
+    "addSlugToKey": true
   }
 }
