@@ -4,7 +4,7 @@
 # Instead use the latest tagged version as the next row
 # DOCKER_CONTAINER=sitespeedio/sitespeed.io:10.1.0
 
-DOCKER_CONTAINER=sitespeedio/sitespeed.io:13.1.1
+DOCKER_CONTAINER=sitespeedio/sitespeed.io:17.8.2
 DOCKER_SETUP="--cap-add=NET_ADMIN  --shm-size=2g --rm -v /config:/config -v "$(pwd)":/sitespeed.io --network=host -v /etc/localtime:/etc/localtime:ro -e MAX_OLD_SPACE_SIZE=3072 "
 CONFIG="--config /sitespeed.io/config"
 BROWSERS=(chrome firefox)
@@ -19,7 +19,7 @@ for url in tests/$TEST/desktop/urls/*.txt ; do
         POTENTIAL_CONFIG="./config/$(basename ${url%%.*}).json"
         [[ -f "$POTENTIAL_CONFIG" ]] && CONFIG_FILE="$(basename ${url%.*}).json" || CONFIG_FILE="desktopWithExtras.json"
         NAMESPACE="--graphite.namespace sitespeed_io.$(basename ${url%%.*})"
-        sudo docker run $DOCKER_SETUP $DOCKER_CONTAINER $NAMESPACE $CONFIG/$CONFIG_FILE -b $browser $url
+        sudo docker run $DOCKER_SETUP "$DOCKER_CONTAINER" $NAMESPACE $CONFIG/$CONFIG_FILE -b $browser $url
         control
     done
 done
@@ -31,7 +31,7 @@ for script in tests/$TEST/desktop/scripts/*.js ; do
         POTENTIAL_CONFIG="./config/$(basename ${script%%.*}).json"
         [[ -f "$POTENTIAL_CONFIG" ]] && CONFIG_FILE="$(basename ${script%.*}).json" || CONFIG_FILE="desktop.json"
         NAMESPACE="--graphite.namespace sitespeed_io.$(basename ${script%%.*})"
-        sudo docker run $DOCKER_SETUP $DOCKER_CONTAINER $NAMESPACE $CONFIG/$CONFIG_FILE --multi -b $browser --spa $script
+        sudo docker run $DOCKER_SETUP "$DOCKER_CONTAINER" $NAMESPACE $CONFIG/$CONFIG_FILE --multi -b $browser --spa $script
         control
     done
 done
@@ -41,7 +41,7 @@ for url in tests/$TEST/emulatedMobile/urls/*.txt ; do
     POTENTIAL_CONFIG="./config/$(basename ${url%%.*}).json"
     [[ -f "$POTENTIAL_CONFIG" ]] && CONFIG_FILE="$(basename ${url%.*}).json" || CONFIG_FILE="emulatedMobile.json"
     NAMESPACE="--graphite.namespace sitespeed_io.$(basename ${url%%.*})"
-    sudo docker run $DOCKER_SETUP $DOCKER_CONTAINER $NAMESPACE $CONFIG/$CONFIG_FILE $url
+    sudo docker run $DOCKER_SETUP "$DOCKER_CONTAINER" $NAMESPACE $CONFIG/$CONFIG_FILE $url
     control
 done
 
