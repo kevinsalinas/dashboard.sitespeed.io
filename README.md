@@ -184,3 +184,43 @@ Sometimes your cloud server reboots. To make sure it auto start your tests, you 
 
 [travis-image]: https://img.shields.io/travis/sitespeedio/dashboard.sitespeed.io.svg?style=flat-square
 [travis-url]: https://travis-ci.org/sitespeedio/dashboard.sitespeed.io
+
+
+
+amazon
+https://www.amazon.com.mx/s?k=switch&__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss
+https://www.amazon.com.mx/gp/browse.html?node=9687925011&ref_=nav_em__tv_and_video_0_2_10_2
+https://www.amazon.com.mx/Nintendo-Consola-Switch-Neon-Version/dp/B07VGRJDFY
+https://www.amazon.com.mx/stores/node/12273534011/?field-lbr_brands_browse-bin=Amazon_Basics
+https://www.amazon.com.mx/
+
+coppel
+https://www.coppel.com/SearchDisplay?categoryId=&storeId=12761&catalogId=10001&langId=-5&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=12&searchTerm=RB2039-EPMTPE-NIKE-ACCELERATIONAPPAREAL
+https://www.coppel.com/zapatos
+https://www.coppel.com/consola-nintendo-switch-de-32-gb-pm-2662783
+https://www.coppel.com/nike
+https://www.coppel.com/
+
+
+mercadolibre
+https://listado.mercadolibre.com.mx/switch
+https://www.mercadolibre.com.mx/c/celulares-y-telefonia
+https://www.mercadolibre.com.mx/nintendo-switch-32gb-standard-rojo-neon-azul-neon-y-negro/p/MLM8755483?searchVariation=MLM8755483&source=search
+https://ofertas.mercadolibre.com.mx/poco
+https://www.mercadolibre.com.mx/
+
+palacio
+https://www.elpalaciodehierro.com/
+https://www.elpalaciodehierro.com/hombre/ropa/camisas-de-vestir/
+https://www.elpalaciodehierro.com/nintendo-consola-nintendo-switch-32-gb-40488908.html
+https://www.elpalaciodehierro.com/mujer/ropa/
+https://www.elpalaciodehierro.com/marcas/hugo-boss/
+
+
+walmart
+https://www.walmart.com.mx/celulares/smartphones/telcel
+https://www.walmart.com.mx/celulares/smartphones
+https://www.walmart.com.mx/videojuegos/nintendo-switch/consolas/consola-nintendo-switch-neon-v-1-1_00004549688217
+https://www.walmart.com.mx/inicio
+
+

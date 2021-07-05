@@ -1,0 +1,40 @@
+{
+    "extends": "./config/secrets.json",
+    "browsertime": {
+      "connectivity": {
+        "engine": "throttle",
+        "profile": "cable"
+      },
+      "visualElements": true,
+      "iterations": 2,
+      "browser": "chrome",
+      "video": true,
+      "visualMetric": true,
+      "chrome": {
+        "collectConsoleLog": true,
+        "enableTraceScreenshots": true
+      },
+      "firefox": {
+        "includeResponseBodies": "all",
+        "disableBrowsertimeExtension": true,
+        "geckoProfiler": true
+      }
+    },
+    "cpu": true,
+    "gzipHAR": true,
+    "html": {
+      "fetchHARFiles": true,
+      "showScript": true,
+      "compareURL": "https://compare.sitespeed.io/"
+    },
+    "screenshot": {
+      "type": "jpg"
+    },
+    "slug": "firstView",
+    "copyLatestFilesToBase": true,
+    "graphite": {
+      "namespace": "sitespeed_io.desktop",
+      "addSlugToKey": true
+    }
+  }
+  
